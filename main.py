@@ -10,8 +10,22 @@ def escalier(taille,nb):
         t.right(90) #tourne droit en degre
         # taille=taille-10
         taille-=10               
-    t.forward(taille)     
+    t.forward(taille)
+
+def carre(taille):
+    for i in range(0,4):
+        t.forward(taille)
+        t.left(90) 
+def carres(taille_depart,nb):
+    for i in range (1,nb) :
+        taille = i * taille_depart
+        carre(taille)
+        
     
-escalier(60,5)
+   
+# escalier(60,5)
+carres(10,10)
+
+
 # Garder la fenêtre ouverte
 turtle.done()
